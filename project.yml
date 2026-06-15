@@ -1,0 +1,56 @@
+name: BehavioralCoach
+options:
+  bundleIdPrefix: com.tomharper
+  deploymentTarget:
+    iOS: "18.1"
+  developmentLanguage: en
+  xcodeVersion: "16.0"
+  createIntermediateGroups: true
+  generateEmptyDirectories: true
+  groupSortPosition: top
+
+settings:
+  base:
+    SWIFT_VERSION: "6.0"
+    SWIFT_STRICT_CONCURRENCY: minimal
+    ENABLE_USER_SCRIPT_SANDBOXING: YES
+    MARKETING_VERSION: "0.1.0"
+    CURRENT_PROJECT_VERSION: "1"
+    DEVELOPMENT_TEAM: ""  # set in Xcode after first open if needed for device run
+
+targets:
+  BehavioralCoach:
+    type: application
+    platform: iOS
+    sources:
+      - path: BehavioralCoach
+        excludes:
+          - "**/.DS_Store"
+    resources:
+      - path: BehavioralCoach/Resources
+    info:
+      path: BehavioralCoach/Info.plist
+      properties:
+        CFBundleDisplayName: Behavioral Coach
+        CFBundleShortVersionString: $(MARKETING_VERSION)
+        CFBundleVersion: $(CURRENT_PROJECT_VERSION)
+        UILaunchScreen:
+          UIColorName: ""
+        UISupportedInterfaceOrientations:
+          - UIInterfaceOrientationPortrait
+        UIRequiresFullScreen: true
+        # Privacy permission strings
+        NSCameraUsageDescription: "We record you answering behavioral questions so you can watch your own delivery and catch reflexes you can't feel in the moment. Video stays on this device."
+        NSMicrophoneUsageDescription: "We record audio alongside video to analyze your speech. Audio stays on this device."
+        NSSpeechRecognitionUsageDescription: "We transcribe your recorded answers on-device. Transcripts never leave your phone."
+    settings:
+      base:
+        PRODUCT_BUNDLE_IDENTIFIER: com.tomharper.BehavioralCoach
+        TARGETED_DEVICE_FAMILY: "1"  # iPhone only (change to "1,2" for iPad)
+        INFOPLIST_FILE: BehavioralCoach/Info.plist
+        INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents: YES
+        GENERATE_INFOPLIST_FILE: NO
+        CODE_SIGN_STYLE: Automatic
+        ASSETCATALOG_COMPILER_APPICON_NAME: AppIcon
+        ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME: AccentColor
+    dependencies: []

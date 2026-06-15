@@ -1,0 +1,122 @@
+[
+  {
+    "id": "6FE7C1D2-0001-4000-A000-000000000001",
+    "prompt": "Tell me about a time you were confidently wrong about something and changed your mind. I want to hear what specifically caused you to update.",
+    "category": "failureOwnership",
+    "probeType": "direct"
+  },
+  {
+    "id": "6FE7C1D2-0001-4000-A000-000000000002",
+    "prompt": "Walk me through your biggest accomplishment.",
+    "category": "failureOwnership",
+    "probeType": "trojanHorse"
+  },
+  {
+    "id": "6FE7C1D2-0001-4000-A000-000000000003",
+    "prompt": "Tell me about a hire you made that didn't work out. What did you miss in the evaluation?",
+    "category": "failureOwnership",
+    "probeType": "direct"
+  },
+  {
+    "id": "6FE7C1D2-0001-4000-A000-000000000004",
+    "prompt": "Describe a situation where you had to influence a decision without having positional authority.",
+    "category": "influence",
+    "probeType": "behavioral"
+  },
+  {
+    "id": "6FE7C1D2-0001-4000-A000-000000000005",
+    "prompt": "Tell me about a time you pushed back on a direction, and later realized you were the one who was wrong.",
+    "category": "judgment",
+    "probeType": "direct"
+  },
+  {
+    "id": "6FE7C1D2-0001-4000-A000-000000000006",
+    "prompt": "Describe your leadership style.",
+    "category": "leadership",
+    "probeType": "trojanHorse"
+  },
+  {
+    "id": "6FE7C1D2-0001-4000-A000-000000000007",
+    "prompt": "Tell me about a technology choice you were sure about that underperformed in production.",
+    "category": "judgment",
+    "probeType": "direct"
+  },
+  {
+    "id": "6FE7C1D2-0001-4000-A000-000000000008",
+    "prompt": "Walk me through how you handled a disagreement with a peer you respected.",
+    "category": "conflict",
+    "probeType": "behavioral"
+  },
+  {
+    "id": "6FE7C1D2-0001-4000-A000-000000000009",
+    "prompt": "Tell me about a time you had to ship with incomplete information. What did you assume, and which of those assumptions turned out to be wrong?",
+    "category": "ambiguity",
+    "probeType": "direct"
+  },
+  {
+    "id": "6FE7C1D2-0001-4000-A000-00000000000A",
+    "prompt": "Tell me about a time you removed a process or meeting and the team got faster.",
+    "category": "leadership",
+    "probeType": "behavioral"
+  },
+  {
+    "id": "6FE7C1D2-0001-4000-A000-00000000000B",
+    "prompt": "What's something you believed about building software five years ago that you no longer believe?",
+    "category": "failureOwnership",
+    "probeType": "direct"
+  },
+  {
+    "id": "6FE7C1D2-0001-4000-A000-00000000000C",
+    "prompt": "Describe a time you gave feedback that landed badly. What did you learn about how you deliver feedback?",
+    "category": "conflict",
+    "probeType": "direct"
+  },
+  {
+    "id": "6FE7C1D2-0001-4000-A000-00000000000D",
+    "prompt": "Tell me about a project where your initial estimate was dramatically wrong. What did you not account for?",
+    "category": "judgment",
+    "probeType": "direct"
+  },
+  {
+    "id": "6FE7C1D2-0001-4000-A000-00000000000E",
+    "prompt": "Walk me through a time you had to lead a team through ambiguous direction from leadership.",
+    "category": "ambiguity",
+    "probeType": "behavioral"
+  },
+  {
+    "id": "6FE7C1D2-0001-4000-A000-00000000000F",
+    "prompt": "Describe a moment when you had to reverse a decision you'd publicly committed to. How did you handle the reversal?",
+    "category": "judgment",
+    "probeType": "direct"
+  },
+  {
+    "id": "6FE7C1D2-0001-4000-A000-000000000010",
+    "prompt": "Tell me about your best technical decision of the last two years.",
+    "category": "judgment",
+    "probeType": "trojanHorse"
+  },
+  {
+    "id": "6FE7C1D2-0001-4000-A000-000000000011",
+    "prompt": "Tell me about a time you misread a room — thought you had buy-in and didn't. What did you miss?",
+    "category": "influence",
+    "probeType": "direct"
+  },
+  {
+    "id": "6FE7C1D2-0001-4000-A000-000000000012",
+    "prompt": "Describe a time a direct report surprised you in a way that changed how you thought about them.",
+    "category": "leadership",
+    "probeType": "behavioral"
+  },
+  {
+    "id": "6FE7C1D2-0001-4000-A000-000000000013",
+    "prompt": "Walk me through a time you were the lone voice advocating for a position. Was your position the right one in hindsight?",
+    "category": "influence",
+    "probeType": "direct"
+  },
+  {
+    "id": "6FE7C1D2-0001-4000-A000-000000000014",
+    "prompt": "Tell me about a time you had to operate entirely on your own judgment, with no one to check your work. What's the decision from that period you most second-guess now?",
+    "category": "judgment",
+    "probeType": "direct"
+  }
+]

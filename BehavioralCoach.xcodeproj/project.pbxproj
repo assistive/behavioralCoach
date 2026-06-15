@@ -1,0 +1,459 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		154E974EE7AB60ECF33F4936 /* Question.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6F82B648CFBF907AD1C0CF3B /* Question.swift */; };
+		190FCCD7CF82A59B7D3668F1 /* questions.json in Resources */ = {isa = PBXBuildFile; fileRef = 93101012DDD3E8768F6D8623 /* questions.json */; };
+		1A687F50AEA39E1D0D93F721 /* MetricsAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8809F11FD53DCADB9EEC9820 /* MetricsAnalyzer.swift */; };
+		235A096650C644A46A8B9923 /* SpeechMetrics.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5629C6EDE0AD612126314035 /* SpeechMetrics.swift */; };
+		3BFB6F5A17D016D5CF97CD0B /* Session.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9C1A3452ECF892F8B00B03AE /* Session.swift */; };
+		52A4F2491A75803514605B1D /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD91301D17D0734C869C8EFC /* ContentView.swift */; };
+		532E34A86D5C1995749EF7EF /* QuestionsStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = A75333B8E96B987EA5ACE6D0 /* QuestionsStore.swift */; };
+		75C64C431D4ECBBA831E72A1 /* VideoRecorder.swift in Sources */ = {isa = PBXBuildFile; fileRef = DFAE0FDAB21D529B1D6187FF /* VideoRecorder.swift */; };
+		7DECE99ADECFC069AD2152A9 /* QuestionListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF7C9144166DB0B3AB12E07E /* QuestionListView.swift */; };
+		8B3DDB3D67B56EE3814F3065 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 198105A15D83790C1904749A /* HistoryView.swift */; };
+		95A302B1837116BDD9D67946 /* AnalysisViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = A7FFCD5C14070B6E12D3E5E2 /* AnalysisViewModel.swift */; };
+		AC30F0CCB12C2070D1D45F5C /* CameraPreview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 632F8096E96952F956993895 /* CameraPreview.swift */; };
+		AF92A3CF3D953338D1BDD362 /* RecordingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = DBDA6B6FED8A28D9D13E67D5 /* RecordingView.swift */; };
+		B17513C648AE494085D37238 /* AnalysisView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9D0A770290205DA0AEBBF736 /* AnalysisView.swift */; };
+		B3DE7FA3FA5DE12555A4CF49 /* Transcriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = B73EBEBB4158604367B78D6C /* Transcriber.swift */; };
+		B4ADFFF698A5F23DC95C480B /* BehavioralCoachApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0EACE5B68C534E63CEE6A525 /* BehavioralCoachApp.swift */; };
+		B7B5DECB2C617E2417DAFB6C /* SessionDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8F50803C586D91F14AB4BFAD /* SessionDetailView.swift */; };
+		BB4B65419BE9F66C0B74E016 /* RecordingViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBE97DBD62B5D5022BA61109 /* RecordingViewModel.swift */; };
+		CDC3E5075A078F01C3C0D8FD /* Critique.swift in Sources */ = {isa = PBXBuildFile; fileRef = 258ADC738C24486B3291A46D /* Critique.swift */; };
+		CFBE4948454EACEBA120AABA /* PromptLibrary.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6CD7215C854948652DFC3494 /* PromptLibrary.swift */; };
+		FA6B446AC92F3980CB81AA81 /* LLMAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971C96932C1AA9A88C818297 /* LLMAnalyzer.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0EACE5B68C534E63CEE6A525 /* BehavioralCoachApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BehavioralCoachApp.swift; sourceTree = "<group>"; };
+		198105A15D83790C1904749A /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		258ADC738C24486B3291A46D /* Critique.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Critique.swift; sourceTree = "<group>"; };
+		5629C6EDE0AD612126314035 /* SpeechMetrics.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechMetrics.swift; sourceTree = "<group>"; };
+		632F8096E96952F956993895 /* CameraPreview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPreview.swift; sourceTree = "<group>"; };
+		6CD7215C854948652DFC3494 /* PromptLibrary.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PromptLibrary.swift; sourceTree = "<group>"; };
+		6F82B648CFBF907AD1C0CF3B /* Question.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Question.swift; sourceTree = "<group>"; };
+		8809F11FD53DCADB9EEC9820 /* MetricsAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MetricsAnalyzer.swift; sourceTree = "<group>"; };
+		8F50803C586D91F14AB4BFAD /* SessionDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SessionDetailView.swift; sourceTree = "<group>"; };
+		93101012DDD3E8768F6D8623 /* questions.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = questions.json; sourceTree = "<group>"; };
+		971C96932C1AA9A88C818297 /* LLMAnalyzer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LLMAnalyzer.swift; sourceTree = "<group>"; };
+		9C1A3452ECF892F8B00B03AE /* Session.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Session.swift; sourceTree = "<group>"; };
+		9D0A770290205DA0AEBBF736 /* AnalysisView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisView.swift; sourceTree = "<group>"; };
+		A75333B8E96B987EA5ACE6D0 /* QuestionsStore.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionsStore.swift; sourceTree = "<group>"; };
+		A7FFCD5C14070B6E12D3E5E2 /* AnalysisViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnalysisViewModel.swift; sourceTree = "<group>"; };
+		B73EBEBB4158604367B78D6C /* Transcriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Transcriber.swift; sourceTree = "<group>"; };
+		DBDA6B6FED8A28D9D13E67D5 /* RecordingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingView.swift; sourceTree = "<group>"; };
+		DF7C9144166DB0B3AB12E07E /* QuestionListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = QuestionListView.swift; sourceTree = "<group>"; };
+		DFAE0FDAB21D529B1D6187FF /* VideoRecorder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VideoRecorder.swift; sourceTree = "<group>"; };
+		E7BCCD40E84E9FCF50841ED8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		FBE97DBD62B5D5022BA61109 /* RecordingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingViewModel.swift; sourceTree = "<group>"; };
+		FC3494D98A6A1E3223B49DA1 /* BehavioralCoach.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = BehavioralCoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		FD91301D17D0734C869C8EFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0BCA840214CB42B252CC75D6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				FC3494D98A6A1E3223B49DA1 /* BehavioralCoach.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		191D896D613427D62D573722 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				258ADC738C24486B3291A46D /* Critique.swift */,
+				6F82B648CFBF907AD1C0CF3B /* Question.swift */,
+				9C1A3452ECF892F8B00B03AE /* Session.swift */,
+				5629C6EDE0AD612126314035 /* SpeechMetrics.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		60C63B44791FC16CA72FCB37 /* Recording */ = {
+			isa = PBXGroup;
+			children = (
+				632F8096E96952F956993895 /* CameraPreview.swift */,
+				DBDA6B6FED8A28D9D13E67D5 /* RecordingView.swift */,
+				FBE97DBD62B5D5022BA61109 /* RecordingViewModel.swift */,
+				DFAE0FDAB21D529B1D6187FF /* VideoRecorder.swift */,
+			);
+			path = Recording;
+			sourceTree = "<group>";
+		};
+		772F1ECDEC3DED35B586AB5E /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				93101012DDD3E8768F6D8623 /* questions.json */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		7C9665419DE539D9FB192BDE = {
+			isa = PBXGroup;
+			children = (
+				977C62FDA3179A17FE038B4D /* BehavioralCoach */,
+				0BCA840214CB42B252CC75D6 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		8C58C1CE04785A1C1D8C4EF3 /* Analysis */ = {
+			isa = PBXGroup;
+			children = (
+				9D0A770290205DA0AEBBF736 /* AnalysisView.swift */,
+				A7FFCD5C14070B6E12D3E5E2 /* AnalysisViewModel.swift */,
+				971C96932C1AA9A88C818297 /* LLMAnalyzer.swift */,
+				8809F11FD53DCADB9EEC9820 /* MetricsAnalyzer.swift */,
+				B73EBEBB4158604367B78D6C /* Transcriber.swift */,
+			);
+			path = Analysis;
+			sourceTree = "<group>";
+		};
+		977C62FDA3179A17FE038B4D /* BehavioralCoach */ = {
+			isa = PBXGroup;
+			children = (
+				FC47E7AB9E05D9DF812FE8BA /* Features */,
+				191D896D613427D62D573722 /* Models */,
+				772F1ECDEC3DED35B586AB5E /* Resources */,
+				9E718EA3F8C51D14F2AD826D /* Services */,
+				0EACE5B68C534E63CEE6A525 /* BehavioralCoachApp.swift */,
+				FD91301D17D0734C869C8EFC /* ContentView.swift */,
+				E7BCCD40E84E9FCF50841ED8 /* Info.plist */,
+			);
+			path = BehavioralCoach;
+			sourceTree = "<group>";
+		};
+		9E718EA3F8C51D14F2AD826D /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				6CD7215C854948652DFC3494 /* PromptLibrary.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		E4C399A593DAF3C057082DA7 /* History */ = {
+			isa = PBXGroup;
+			children = (
+				198105A15D83790C1904749A /* HistoryView.swift */,
+				8F50803C586D91F14AB4BFAD /* SessionDetailView.swift */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		F1584A19377FE48104703760 /* Questions */ = {
+			isa = PBXGroup;
+			children = (
+				DF7C9144166DB0B3AB12E07E /* QuestionListView.swift */,
+				A75333B8E96B987EA5ACE6D0 /* QuestionsStore.swift */,
+			);
+			path = Questions;
+			sourceTree = "<group>";
+		};
+		FC47E7AB9E05D9DF812FE8BA /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				8C58C1CE04785A1C1D8C4EF3 /* Analysis */,
+				E4C399A593DAF3C057082DA7 /* History */,
+				F1584A19377FE48104703760 /* Questions */,
+				60C63B44791FC16CA72FCB37 /* Recording */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		52B68E74B98E87D5C6B93051 /* BehavioralCoach */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A87AADD5C4807C2529F3AE58 /* Build configuration list for PBXNativeTarget "BehavioralCoach" */;
+			buildPhases = (
+				B0DF628C0ED9B454EEE45FA7 /* Sources */,
+				EB5653824E766FD30753EB96 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BehavioralCoach;
+			packageProductDependencies = (
+			);
+			productName = BehavioralCoach;
+			productReference = FC3494D98A6A1E3223B49DA1 /* BehavioralCoach.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8B9015116EDB75CCBD726201 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1600;
+				TargetAttributes = {
+					52B68E74B98E87D5C6B93051 = {
+						DevelopmentTeam = "";
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = DB7CA59EB6E2CE74BC8C8D6A /* Build configuration list for PBXProject "BehavioralCoach" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = 7C9665419DE539D9FB192BDE;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 0BCA840214CB42B252CC75D6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				52B68E74B98E87D5C6B93051 /* BehavioralCoach */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EB5653824E766FD30753EB96 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				190FCCD7CF82A59B7D3668F1 /* questions.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		B0DF628C0ED9B454EEE45FA7 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B17513C648AE494085D37238 /* AnalysisView.swift in Sources */,
+				95A302B1837116BDD9D67946 /* AnalysisViewModel.swift in Sources */,
+				B4ADFFF698A5F23DC95C480B /* BehavioralCoachApp.swift in Sources */,
+				AC30F0CCB12C2070D1D45F5C /* CameraPreview.swift in Sources */,
+				52A4F2491A75803514605B1D /* ContentView.swift in Sources */,
+				CDC3E5075A078F01C3C0D8FD /* Critique.swift in Sources */,
+				8B3DDB3D67B56EE3814F3065 /* HistoryView.swift in Sources */,
+				FA6B446AC92F3980CB81AA81 /* LLMAnalyzer.swift in Sources */,
+				1A687F50AEA39E1D0D93F721 /* MetricsAnalyzer.swift in Sources */,
+				CFBE4948454EACEBA120AABA /* PromptLibrary.swift in Sources */,
+				154E974EE7AB60ECF33F4936 /* Question.swift in Sources */,
+				7DECE99ADECFC069AD2152A9 /* QuestionListView.swift in Sources */,
+				532E34A86D5C1995749EF7EF /* QuestionsStore.swift in Sources */,
+				AF92A3CF3D953338D1BDD362 /* RecordingView.swift in Sources */,
+				BB4B65419BE9F66C0B74E016 /* RecordingViewModel.swift in Sources */,
+				3BFB6F5A17D016D5CF97CD0B /* Session.swift in Sources */,
+				B7B5DECB2C617E2417DAFB6C /* SessionDetailView.swift in Sources */,
+				235A096650C644A46A8B9923 /* SpeechMetrics.swift in Sources */,
+				B3DE7FA3FA5DE12555A4CF49 /* Transcriber.swift in Sources */,
+				75C64C431D4ECBBA831E72A1 /* VideoRecorder.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1BA12930FEAC2D6F341291D6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = BehavioralCoach/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tomharper.BehavioralCoach;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		45AD99AAEBEC3DCC33BE73D2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		A2D3398E30B8B40CD99747B7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 18.1;
+				MARKETING_VERSION = 0.1.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = minimal;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		D3E48AD132983A61C50A7655 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				CODE_SIGN_STYLE = Automatic;
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = BehavioralCoach/Info.plist;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.tomharper.BehavioralCoach;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A87AADD5C4807C2529F3AE58 /* Build configuration list for PBXNativeTarget "BehavioralCoach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1BA12930FEAC2D6F341291D6 /* Debug */,
+				D3E48AD132983A61C50A7655 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		DB7CA59EB6E2CE74BC8C8D6A /* Build configuration list for PBXProject "BehavioralCoach" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				A2D3398E30B8B40CD99747B7 /* Debug */,
+				45AD99AAEBEC3DCC33BE73D2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8B9015116EDB75CCBD726201 /* Project object */;
+}
