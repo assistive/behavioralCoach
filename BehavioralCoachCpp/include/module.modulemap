@@ -1,0 +1,5 @@
+module BehavioralCoachCpp {
+  header "SpeechMetrics.hpp"
+  requires cplusplus
+  export *
+}

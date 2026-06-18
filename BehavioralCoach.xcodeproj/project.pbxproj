@@ -30,6 +30,7 @@
 		AAAA000000000000000000R1 /* RecordingStore.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBB000000000000000000R1 /* RecordingStore.swift */; };
 		AAAA000000000000000000A1 /* AnalysisResultsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = BBBB000000000000000000A1 /* AnalysisResultsView.swift */; };
 		FA6B446AC92F3980CB81AA81 /* LLMAnalyzer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 971C96932C1AA9A88C818297 /* LLMAnalyzer.swift */; };
+		CCCC000000000000000000C1 /* SpeechMetrics.cpp in Sources */ = {isa = PBXBuildFile; fileRef = CCCC000000000000000000F1 /* SpeechMetrics.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +59,9 @@
 		FBE97DBD62B5D5022BA61109 /* RecordingViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingViewModel.swift; sourceTree = "<group>"; };
 		FC3494D98A6A1E3223B49DA1 /* BehavioralCoach.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = BehavioralCoach.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD91301D17D0734C869C8EFC /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		CCCC000000000000000000F1 /* SpeechMetrics.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = src/SpeechMetrics.cpp; sourceTree = "<group>"; };
+		CCCC000000000000000000F2 /* SpeechMetrics.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = include/SpeechMetrics.hpp; sourceTree = "<group>"; };
+		CCCC000000000000000000F3 /* module.modulemap */ = {isa = PBXFileReference; lastKnownFileType = "sourcecode.module-map"; path = include/module.modulemap; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXGroup section */
@@ -103,8 +107,19 @@
 			isa = PBXGroup;
 			children = (
 				977C62FDA3179A17FE038B4D /* BehavioralCoach */,
+				CCCC000000000000000000G1 /* BehavioralCoachCpp */,
 				0BCA840214CB42B252CC75D6 /* Products */,
 			);
+			sourceTree = "<group>";
+		};
+		CCCC000000000000000000G1 /* BehavioralCoachCpp */ = {
+			isa = PBXGroup;
+			children = (
+				CCCC000000000000000000F2 /* SpeechMetrics.hpp */,
+				CCCC000000000000000000F3 /* module.modulemap */,
+				CCCC000000000000000000F1 /* SpeechMetrics.cpp */,
+			);
+			path = BehavioralCoachCpp;
 			sourceTree = "<group>";
 		};
 		8C58C1CE04785A1C1D8C4EF3 /* Analysis */ = {
@@ -265,6 +280,7 @@
 				235A096650C644A46A8B9923 /* SpeechMetrics.swift in Sources */,
 				B3DE7FA3FA5DE12555A4CF49 /* Transcriber.swift in Sources */,
 				75C64C431D4ECBBA831E72A1 /* VideoRecorder.swift in Sources */,
+				CCCC000000000000000000C1 /* SpeechMetrics.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -276,17 +292,30 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/BehavioralCoachCpp/include",
+				);
 				INFOPLIST_FILE = BehavioralCoach/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-cxx-interoperability-mode=default",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tomharper.BehavioralCoach;
 				SDKROOT = iphoneos;
+				SWIFT_INCLUDE_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/BehavioralCoachCpp/include",
+				);
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
@@ -425,17 +454,30 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++17";
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
 				GENERATE_INFOPLIST_FILE = NO;
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/BehavioralCoachCpp/include",
+				);
 				INFOPLIST_FILE = BehavioralCoach/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				OTHER_SWIFT_FLAGS = (
+					"$(inherited)",
+					"-cxx-interoperability-mode=default",
+				);
 				PRODUCT_BUNDLE_IDENTIFIER = com.tomharper.BehavioralCoach;
 				SDKROOT = iphoneos;
+				SWIFT_INCLUDE_PATHS = (
+					"$(inherited)",
+					"$(SRCROOT)/BehavioralCoachCpp/include",
+				);
 				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;

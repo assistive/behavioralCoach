@@ -26,13 +26,14 @@ This tool is that playback, with annotations.
 
 ## Current status
 
-**Phases 1–4 implemented and building** (verified via `xcodebuild`, iOS Simulator). End-to-end today: pick a question → record → replay → on-device transcript → speech metrics → LLM coaching critique (requires iOS 26 — see Requirements) → saved session → History tab → reopen any past session.
+**Phases 1–5 implemented and building** (verified via `xcodebuild`, iOS Simulator). End-to-end today: pick a question → record → replay → on-device transcript → speech metrics → LLM coaching critique (requires iOS 26 — see Requirements) → saved session → History tab → reopen any past session.
 
 - ✅ **Phase 1 — record → replay:** `QuestionListView`, `RecordingView`, `RecordingViewModel`, `VideoRecorder`, `CameraPreview`, `AnalysisView` player.
 - ✅ **Phase 2 — transcription:** `Transcriber` (on-device `SFSpeechRecognizer`, `requiresOnDeviceRecognition = true`, no cloud fallback).
 - ✅ **Phase 3 — metrics + critique:** `MetricsAnalyzer` (Swift), `LLMAnalyzer` (Foundation Models, manual JSON decode, availability-gated), full pipeline in `AnalysisViewModel`, metrics + critique UI in `AnalysisView`.
 - ✅ **Phase 4 — persistence + History:** `Session` saved to SwiftData after analysis; `RecordingStore` moves videos to stable `Documents/Recordings` (re-resolved across launches); `HistoryView` (list + swipe-delete) and `SessionDetailView` (read-only replay) share `AnalysisResultsView` with the live screen.
-- ⬜ **Phase 5 (next):** `BehavioralCoachCpp/` — move `MetricsAnalyzer.compute` into a C++ module (the clean interop boundary; the Swift signature stays identical). Note: new C++ sources + the bridging header must be wired into `project.pbxproj`.
+- ✅ **Phase 5 — C++ interop:** `BehavioralCoachCpp/` computes the scalar metrics via `coach::compute_metrics(const char*, double)`; `MetricsAnalyzer` calls it through Swift/C++ interop (C-string in, POD out) with an unchanged public signature; coda detection stays in Swift. C++ interop wired into `project.pbxproj` (sources, `-cxx-interoperability-mode=default`, `gnu++17`, include/search paths).
+- ⬜ **Phase 6+ (optional):** C++ DSP audio features (real pause timings), whisper.cpp, custom questions, export.
 - ⬜ **Roadmap:** vocal-tone (audio prosody) and eye-contact (Vision gaze) presentation analysis — see [Roadmap](#roadmap-presentation-analysis).
 
 > ⚠️ **Not yet smoke-tested on a physical device.** Recording needs a real camera (the Simulator has none). The build is green but the record → replay → analyze loop hasn't been exercised on-device yet.
