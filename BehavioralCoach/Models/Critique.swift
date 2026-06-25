@@ -74,5 +74,28 @@ struct Critique: Codable, Hashable {
         /// Speaker performed the "but actually I was right" move somewhere
         /// in the middle of the story, not just at the end.
         case reframeReflex
+
+        /// Delivery was rushed — pace too high or sentences clipped, so the
+        /// interviewer can't keep up. Distinct from `tooLong`, which is about
+        /// total length, not pace.
+        case tooFast
+
+        /// Delivery dragged — pace too low, so the speaker sounds uncertain.
+        case tooSlow
+
+        /// Fallback for any `kind` the model emits that this build doesn't
+        /// recognize. Lets a single unexpected value degrade to a generic
+        /// issue instead of throwing out the entire critique. See the custom
+        /// `init(from:)` below.
+        case other
+
+        /// Resilient decoding: an unrecognized raw string degrades to `.other`
+        /// rather than throwing. Known cases keep their existing `rawValue`s,
+        /// so stored sessions still decode unchanged. Encoding stays synthesized
+        /// (round-trips via `rawValue`).
+        init(from decoder: Decoder) throws {
+            let raw = try decoder.singleValueContainer().decode(String.self)
+            self = Kind(rawValue: raw) ?? .other
+        }
     }
 }

@@ -95,8 +95,8 @@ enum PromptLibrary {
        can't own outcomes.
 
     5. TEMPO. If speaking rate > 190 WPM or sentence structure is
-       rushed, flag as tooFast (use kind = tooLong or the new kind you
-       see fit). If < 120 WPM, the speaker sounds uncertain.
+       rushed, flag as kind = tooFast. If < 120 WPM, the speaker sounds
+       uncertain — flag as kind = tooSlow.
 
     6. MISSING SPECIFICITY. Was this a real story or a generic template?
        Real stories have numbers, names of technologies (not people),
